@@ -1,0 +1,98 @@
+[build]
+  command = "hugo"
+  publish = "public"
+  functions= "functions"
+
+[context.production.environment]
+HUGO_VERSION = "0.67.1"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.67.1"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.67.1"
+
+[context.branch-deploy]
+command = "hugo -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.67.1"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/ondersteuning/instructie-videos/meer-videos/"
+  to = "/cast/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/algemeen/storing/"
+  to = "/status/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/instructie-videos/"
+  to = "/cast/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/integraties/voipcti-koppeling-herstellen/"
+  to = "http://files.callvoip.nl/downloads/Callvoip_handleiding_VoIP_CTI_login.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/integraties/info-bubble/"
+  to = "http://files.callvoip.nl/downloads/Callvoip_informatie-over-de-VoIPCTI-CRM-Integraties.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/ondersteuning/integraties/handleiding-bubble/"
+  to = "http://files.callvoip.nl/downloads/Callvoip_informatie-over-de-VoIPCTI-Bubble_instellen.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/crm/*"
+  to = "/marketplace/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/tags/*"
+  to = "/marketplace/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/categories/*"
+  to = "/marketplace/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/vamoshandleiding/"
+  to = "http://files.callvoip.nl/downloads/Simmpl_handleiding_ingebruikname_Vamos.pdf"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/nieuwsbrief/"
+  to = "https://j04jt21j.sibpages.com/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/oplossingen/branches/recruitment/"
+  to = "/branches/recruitment/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/oplossingen/branches/advocatuur/"
+  to = "/branches/advocaten/"
+  status = 301
+  force = true
+

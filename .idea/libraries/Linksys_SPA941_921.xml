@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Linksys_SPA941_921">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/static/download/Linksys_SPA941_921/spa941-5.1.8.zip!/" />
+      <root url="jar://$PROJECT_DIR$/static/download/Linksys_SPA941_921/spa941-5[1].1.8.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="firmware 6.02sr1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/static/download/docs/copperjet/firmware 6.02sr1.1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,6 @@
+CV-official
+node_modules
+public
+resources
+# Local Netlify folder
+.netlify
